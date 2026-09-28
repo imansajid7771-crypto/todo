@@ -1,0 +1,41 @@
+body{
+   background-image: url("background.png");
+   display: flex;
+   justify-content: center;
+}
+.task{
+    background-color: rgb(18, 17, 17);
+    border:0.1mm solid orange;
+    min-height: 50px;
+    width: 600px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.task textarea{
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    outline: none;
+    width:100%;
+    color: white;
+    resize: none;
+    display: flex;
+    align-items: flex-start;
+    overflow:hidden;          
+    min-height:30px;
+}
+
+.task button{
+    border:none;
+    background:#3d3c3c;
+    border-radius:50%;
+    width:39px;
+    height:39px;
+    color:darkorange;
+    font-size:2rem;
+    flex-shrink:0;
+
+    
+}

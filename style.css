@@ -1,41 +1,94 @@
-body{
-   background-image: url("background.png");
-   display: flex;
-   justify-content: center;
+body {
+    background-image: url("background.png");
+    display: flex;
+    justify-content: center;
 }
-.task{
-    background-color: rgb(18, 17, 17);
-    border:0.1mm solid orange;
-    min-height: 50px;
-    width: 600px;
-    border-radius: 10px;
+
+.task {
+    width: 700px;
+    min-height: 72px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 18px;
+    padding: 0 16px;
+    border-radius: 22px;
+    background: rgba(8, 8, 10, 0.88);
+    border: 1px solid rgba(245, 158, 11, 0.75);
+    backdrop-filter: blur(14px);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .03),
+        0 0 30px rgba(245, 158, 11, .06);
 }
-.task textarea{
+
+.task textarea {
+    flex: 1;
+    height: 100%;
     border: none;
-    background-color: transparent;
-    font-size: 18px;
     outline: none;
-    width:100%;
-    color: white;
-    resize: none;
-    display: flex;
-    align-items: flex-start;
-    overflow:hidden;          
-    min-height:30px;
+    background: transparent;
+    color: #F5F5F5;
+    font-size: 22px;
+    font-family: "Inter", sans-serif;
 }
 
-.task button{
-    border:none;
-    background:#3d3c3c;
-    border-radius:50%;
-    width:39px;
-    height:39px;
-    color:darkorange;
-    font-size:2rem;
-    flex-shrink:0;
+.task button {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 50%;
+    background: #2A2A2E;
+    color: #F59E0B;
+    font-size: 34px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: .25s ease;
+}
 
-    
+.taskdiv {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 22px;
+    margin-top: 14px;
+    background: rgba(10, 10, 12, .88);
+    border: 1px solid rgba(245, 158, 11, .7);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+}
+
+.taskdiv h2 {
+    color: #F3F4F6;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.taskdiv input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    accent-color: #F59E0B;
+}
+
+.delete-btn {
+    margin-left: auto;
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    color: #9CA3AF;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.delete-btn:hover {
+    background: rgba(245, 158, 11, 0.15);
+    color: #F59E0B;
+    transform: rotate(90deg);
+}
+
+.delete-btn:active {
+    transform: scale(0.9);
 }

@@ -21,7 +21,7 @@ body {
 }
 
 .task textarea {
-    flex: 1;
+     
     height: 100%;
     border: none;
     outline: none;
@@ -29,9 +29,11 @@ body {
     color: #F5F5F5;
     font-size: 22px;
     font-family: "Inter", sans-serif;
+    resize: none;
 }
 
 .task button {
+    align-items: center;
     width: 52px;
     height: 52px;
     flex-shrink: 0;
@@ -91,4 +93,14 @@ body {
 
 .delete-btn:active {
     transform: scale(0.9);
+}
+
+.date{
+    color:gray;
+    
+}
+
+.task-main{
+    display: flex;
+    flex-direction: column;
 }

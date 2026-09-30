@@ -36,7 +36,7 @@ add.addEventListener("click", () => {
    date.innerText = `${day}${time}`;
      let div = document.createElement("div");
      div.classList.add("task-main");
-     div.appendChild(text, date);
+     div.append(text, date);
   let del = document.createElement("button");
   del.innerText = "✕";
   del.classList.add("delete-btn");

@@ -2,6 +2,7 @@ body {
     background-image: url("background.png");
     display: flex;
     justify-content: center;
+    overflow-y: hidden;
 }
 
 .task {
@@ -103,4 +104,9 @@ body {
 .task-main{
     display: flex;
     flex-direction: column;
+}
+.container{
+    overflow-y: auto;
+    max-height: 80vh;
+    
 }

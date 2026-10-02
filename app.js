@@ -7,7 +7,8 @@ textarea.addEventListener("input", () => {
 const add = document.querySelector(".add");
 const input = document.getElementById("text");
 const container = document.querySelector(".container");
-
+let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+console.log(tasks);
 add.addEventListener("click", () => {
    function todosys() {
    let task = document.createElement("div");
@@ -48,6 +49,9 @@ add.addEventListener("click", () => {
   if (input.value.trim() === "") {
   alert("add task details");
   } else {
+    tasks.push(input.value);
+
+        localStorage.setItem("tasks", JSON.stringify(tasks));
     todosys();
   }
 })
